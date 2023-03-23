@@ -6,7 +6,6 @@ import 'Login_Page.dart';
 
 class Authorised_Screen extends StatefulWidget {
   const Authorised_Screen({Key? key}) : super(key: key);
-
   @override
   State<Authorised_Screen> createState() => _Authorised_ScreenState();
 }

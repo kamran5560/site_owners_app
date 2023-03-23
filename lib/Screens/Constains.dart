@@ -24,8 +24,8 @@ Widget TextField_Design(
               color: Color(0xff949494)),
         ),
         Container(
-          margin: EdgeInsets.symmetric(vertical: 12),
-          width: 300,
+          margin: EdgeInsets.symmetric(vertical: 06),
+          width: 320,
           child: TextField(
             decoration: new InputDecoration(
               hintText: "$hint",
@@ -44,8 +44,13 @@ Widget TextField_Design(
   );
 }
 
-Widget Elevated_Button(String B_text, Function() onpress, double padding_hor,
-    double padding_ver, double font_size) {
+Widget Elevated_Button(
+  String B_text,
+  Function() onpress,
+  double padding_hor,
+  double padding_ver,
+  double font_size,
+) {
   return Container(
     child: Row(
       mainAxisAlignment: MainAxisAlignment.center,
