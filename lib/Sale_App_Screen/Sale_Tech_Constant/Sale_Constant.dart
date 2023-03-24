@@ -189,3 +189,138 @@ Widget Profile_screen_card(
     ),
   );
 }
+
+Widget Business_Card_1(String trxt_1, String trxt_2, BuildContext context) {
+  double width = MediaQuery.of(context).size.width;
+  return Padding(
+    padding: EdgeInsets.symmetric(vertical: 22),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          "${trxt_1}",
+          style: TextStyle(
+              fontWeight: FontWeight.w400,
+              fontSize: width * 0.038,
+              color: Color(0xff949494)),
+        ),
+        SizedBox(height: 10),
+        Text(
+          "${trxt_2}",
+          style: TextStyle(
+              fontWeight: FontWeight.w400,
+              fontSize: width * 0.04,
+              color: Color(0xff6D6D6D)),
+        ),
+      ],
+    ),
+  );
+}
+
+Widget Business_Card_2(
+    String trxt_1, String trxt_2, String image, BuildContext context) {
+  double width = MediaQuery.of(context).size.width;
+  return Padding(
+    padding: EdgeInsets.symmetric(vertical: 22),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          "${trxt_1}",
+          style: TextStyle(
+              fontWeight: FontWeight.w400,
+              fontSize: width * 0.038,
+              color: Color(0xff949494)),
+        ),
+        SizedBox(height: 10),
+        Row(
+          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              child: Text(
+                "${trxt_2}",
+                style: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    fontSize: width * 0.042,
+                    color: Color(0xff6D6D6D)),
+              ),
+            ),
+            SizedBox(width: 16),
+            Image.asset("images_sale_app/${image}.png")
+          ],
+        )
+      ],
+    ),
+  );
+}
+
+Widget Business_Card_3(
+    String image, String text_1, String text_2, BuildContext context) {
+  double width = MediaQuery.of(context).size.width;
+  return Expanded(
+    child: Container(
+      // width: 150,
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(12), color: Color(0xffFFFFFF)),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Image.asset("images_sale_app/${image}.png"),
+          SizedBox(height: 24),
+          Text(
+            "${text_1}",
+            style: TextStyle(
+                fontWeight: FontWeight.w600,
+                fontSize: width * 0.035,
+                color: Color(0xff474747)),
+          ),
+          SizedBox(height: 8),
+          Text(
+            "${text_2}",
+            style: TextStyle(
+                fontWeight: FontWeight.w600,
+                fontSize: width * 0.029,
+                color: Color(0xff949494)),
+          ),
+        ],
+      ),
+    ),
+  );
+}
+
+Widget Business_Card_4(
+    String image, String text_1, String text_2, BuildContext context) {
+  double width = MediaQuery.of(context).size.width;
+  return Expanded(
+    child: Container(
+      // width: 150,
+      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(12), color: Color(0xffFFFFFF)),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Image.asset("images_sale_app/${image}.png"),
+          SizedBox(height: 16),
+          Text(
+            "${text_1}",
+            style: TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: width * 0.028,
+                color: Color(0xff949494)),
+          ),
+          SizedBox(height: 8),
+          Text(
+            "${text_2}",
+            style: TextStyle(
+                fontWeight: FontWeight.w600,
+                fontSize: width * 0.05,
+                color: Color(0xff474747)),
+          ),
+        ],
+      ),
+    ),
+  );
+}

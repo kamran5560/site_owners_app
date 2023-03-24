@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'Sale_App_Screen/Business_Detials_Page.dart';
 import 'Sale_App_Screen/Tech_sale_splachscreen.dart';
 import 'Screens/SplachScreen.dart';
 import 'Screens/Authorised.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/splach',
       routes: {
         // When navigating to the "/" route, build the HomeScreen widget.
-        '/splach': (context) => Tech_sale_splachscreen(),
+        '/splach': (context) => Business_Detials_Page(),
         // When navigating to the "/second" route, build the SecondScreen widget.
       },
     );
